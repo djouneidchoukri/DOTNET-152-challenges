@@ -1,0 +1,37 @@
+﻿Komodo Insurance is fixing their badging system.
+  Here's what they need:
+       An app that maintains a dictionary of details about employee badge information.
+
+
+Console Application, its a going to have a class for employee badges.
+This class will be operated on by a dictionary.
+
+
+Explanation of function: "Essentially, an employee will have a badge number that gives access to a list of doors.
+						 Each employee has access to different doors.For instance, a developer might have
+						 access to Door A1 & A5.A claims agent might have access to B2 & B4."
+ 
+ 
+Your task will be to create the following:
+BADGE----A badge class that has the following properties:
+           public int BadgeID { get; set; }
+       public List<string> DoorList { get; set; }
+       BADGEREPOSITORY-----A badge repository that will have methods that do the following:
+                     1. Create a dictionary of badges.Dictionary<int, List<string>> _badgeDictionary = new Dictionary<int, List<string>>();
+                     2. The key for the dictionary will be the BadgeID.
+                     3. The value for the dictionary will be the List of Door Names.
+      
+	  USER STORY----The Program will allow a security staff member to do the following:
+                     create a new badge.
+                     update doors on an existing badge.
+                     delete an existing badge.
+                     show a list with all badge numbers and door access, like this:
+      
+	  Key
+       Badge #             Door Access
+       1                 a1, a5, d4
+       2                 a1, a4, b1, b2
+       3                 a4, a5
+       Out of scope:
+       You do not need to consider tying an individual badge to a particular user. Just the Badge # will do.
+       Be sure to Unit Test your Repository methods.
